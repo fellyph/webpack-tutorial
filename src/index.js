@@ -1,3 +1,4 @@
-const hello_world = () => {
-  console.log('Hello Webpack');
-};
+var myContent = require('./js/content');
+var myHeader = require('./js/header');
+var myFooter = require('./js/footer');
+
