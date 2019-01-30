@@ -1,3 +1,6 @@
 var navigationElement = document.querySelector('.navigation');
 console.log(navigationElement);
-navigationElement.style = {background: blue};
+
+navigationElement.style.backgroundColor = 'azure';
+navigationElement.style.padding = '1em';
+
