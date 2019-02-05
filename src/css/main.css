@@ -1,0 +1,23 @@
+:root {
+  --c-text:#28262C;
+  --c-component-background: #F9F5FF;
+  --c-primary: #14248A;
+  --c-secondary: #D4C2FC;
+  --c-ternary: #998FC7;
+}
+
+.navigation {
+  background: var(--c-primary);
+}
+
+.main {
+  background: var(--c-component-background);
+}
+
+.header {
+  background: var(--c-component-background);
+}
+
+.footer {
+
+}
