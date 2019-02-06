@@ -4,6 +4,14 @@
   --c-primary: #14248A;
   --c-secondary: #D4C2FC;
   --c-ternary: #998FC7;
+  --e-padding: 1em;
+}
+
+.navigation,
+.main,
+.header,
+.footer {
+  padding: var(--e-padding);
 }
 
 .navigation {
@@ -19,5 +27,5 @@
 }
 
 .footer {
-
+  background: var(--c-ternary);
 }
