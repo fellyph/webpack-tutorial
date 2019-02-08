@@ -1,2 +1,2 @@
-var navigationElement = document.querySelector('.navigation');
+const navigationElement = document.querySelector('.navigation');
 console.log(navigationElement);
