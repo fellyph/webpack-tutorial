@@ -1,4 +1,4 @@
-var myContent = require('./js/content');
-var myHeader = require('./js/header');
-var myFooter = require('./js/footer');
-
+import './css/main.css';
+import './js/content';
+import './js/header';
+import './js/footer';

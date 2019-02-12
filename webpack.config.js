@@ -17,6 +17,11 @@ module.exports = {
             presets: ['@babel/preset-env']
           }
         }
+      },
+      {
+        test: /\.css$/,
+        exclude: /(node_modules|bower_components)/,
+        use: ['style-loader', 'css-loader'],
       }
     ]
   }
