@@ -5,6 +5,7 @@
   --c-secondary: #D4C2FC;
   --c-ternary: #998FC7;
   --e-padding: 1em;
+  --header-img: url(../../assets/imgs/webpack-logo.png);
 }
 
 .navigation,
@@ -23,7 +24,8 @@
 }
 
 .header {
-  background: var(--c-component-background);
+  background: var(--header-img);
+  background-repeat: no-repeat;
 }
 
 .footer {

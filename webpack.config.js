@@ -22,7 +22,17 @@ module.exports = {
         test: /\.css$/,
         exclude: /(node_modules|bower_components)/,
         use: ['style-loader', 'css-loader'],
-      }
+      },
+      {
+        test: /\.(svg|gif|png|jpe?g)$/,
+        loader: 'url-loader',
+        options: {
+          limit: 100,
+          fallback: 'file-loader',
+          publicPath: '/img',
+          outputPath: '/img',
+        },
+      },
     ]
   }
 };
