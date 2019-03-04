@@ -1,0 +1,25 @@
+@import 'variables';
+
+.navigation,
+.main,
+.header,
+.footer {
+  padding: $e-padding;
+}
+
+.navigation {
+  background: $c-primary;
+}
+
+.main {
+  background: $c-component-background;
+}
+
+.header {
+  background: $header-img;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  background: $c-ternary;
+}
