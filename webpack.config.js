@@ -1,11 +1,10 @@
 const path = require('path');
 
-module.exports = {
+module.exports = (env, options) => ({
   entry: './src/index.js',
-  mode: 'development',
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
   },
   module: {
     rules: [
@@ -23,6 +22,9 @@ module.exports = {
             loader: 'eslint-loader',
             options: {
               fix: true,
+              rules: {
+                'no-console': (options.mode === 'development') ? 'off' : 'warn',
+              },
             },
           },
         ],
@@ -48,4 +50,4 @@ module.exports = {
       },
     ],
   },
-};
+});
